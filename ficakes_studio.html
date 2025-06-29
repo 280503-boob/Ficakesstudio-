@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fi'cake's Studio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #fff5f8;
+      color: #5e3c47;
+    }
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #ffffff;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-style: italic;
+      color: #7b4d5b;
+    }
+    nav {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    nav a {
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      color: #c86a82;
+    }
+    section {
+      padding: 2rem;
+      max-width: 960px;
+      margin: auto;
+    }
+    .cakes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+    .cake-item {
+      text-align: center;
+    }
+    .cake-item img {
+      width: 100%;
+      border-radius: 1rem;
+    }
+    .order-form input,
+    .order-form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    .order-form button {
+      background-color: #c86a82;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background-color: #fff0f5;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Fi'cake's Studio</h1>
+    <p>"Uniquely designed, deliciously made."</p>
+    <p><strong>Call us: +234 9061715611</strong></p>
+  </header>
+  <nav>
+    <a href="#about">About Us</a>
+    <a href="#menu">Our Cakes</a>
+    <a href="#order">Order Now</a>
+  </nav>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Fi’cake’s Studio is a Lagos-based custom cake studio specializing in elegant and delicious cakes for all occasions. We focus on quality, creativity, and customer satisfaction in every sweet creation.</p>
+  </section>
+  <section id="menu">
+    <h2>Our Cakes</h2>
+    <div class="cakes">
+      <div class="cake-item">
+        <img src="https://i.imgur.com/1aY1xkR.jpg" alt="Birthday Cake">
+        <p>Birthday Cakes</p>
+      </div>
+      <div class="cake-item">
+        <img src="https://i.imgur.com/4Zz9TxX.jpg" alt="Wedding Cake">
+        <p>Wedding Cakes</p>
+      </div>
+      <div class="cake-item">
+        <img src="https://i.imgur.com/zXYLIHo.jpg" alt="Cupcakes">
+        <p>Cupcakes</p>
+      </div>
+      <div class="cake-item">
+        <img src="https://i.imgur.com/JRsX9H3.jpg" alt="Cookies">
+        <p>Cookies</p>
+      </div>
+    </div>
+  </section>
+  <section id="order">
+    <h2>Order Now</h2>
+    <p>Orders must be placed at least 3 days in advance. Delivery is available within Lagos State only.</p>
+    <form class="order-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <input type="text" placeholder="Type of Cake (e.g. Birthday, Wedding)" required />
+      <textarea placeholder="Customization Details (optional)"></textarea>
+      <input type="text" placeholder="Delivery Address (within Lagos only)" required />
+      <input type="date" placeholder="Preferred Delivery Date" required />
+      <button type="submit">Submit Inquiry</button>
+    </form>
+  </section>
+  <footer>
+    &copy; 2025 Fi'cake's Studio | Lagos, Nigeria
+  </footer>
+</body>
+</html>
